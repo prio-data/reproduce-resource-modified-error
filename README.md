@@ -1,6 +1,12 @@
 
 # Reproduce "azure.core.exceptions.ResourceModifiedError"
 
+Install requirements with 
+
+```
+pip install -r requirements.txt
+```
+
 This repository reproduces the ResourceModifiedError that you get when modifying a big blob while it's streaming. To reproduce, spin up Azurite with:
 
 ```
