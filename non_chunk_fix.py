@@ -44,7 +44,7 @@ async def test():
         await write_to_blob(foo_client, "bar", "a"*(1024*1024*10))
 
         await asyncio.gather(
-            *[read_blob(foo_client,"bar") for _ in range(100)],
+            *[read_blob(foo_client,"bar") for _ in range(400)],
             write_to_blob(foo_client, "bar", "b"* (1024*1024*10)))
 
 if __name__ == "__main__":
